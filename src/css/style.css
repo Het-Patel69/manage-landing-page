@@ -1,0 +1,263 @@
+:root {
+    --clr-accent-700: hsl(12, 88%, 59%);
+    --clr-accent-400: hsl(12, 88%, 69%);
+    --clr-accent-100: hsl(13, 100%, 96%);
+
+    --clr-primary-400: hsl(228, 39%, 23%);
+    --clr-primary-700: hsl(233, 12%, 13%);
+    --clr-primary-100: hsl(227, 12%, 61%);
+
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+    --ff-primary: 'Be Vietnam Pro', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: var(--ff-primary);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.clr-primary-400 {
+    color: var(--clr-primary-400);
+}
+
+.clr-primary-100 {
+    color: var(--clr-primary-100);
+}
+
+.btn-accent {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--clr-accent-700);
+    color: var(--VeryLightGray);
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.btn-accent:hover {
+    background-color: var(--clr-accent-400);
+}
+
+.btn-accent-secondary {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--VeryLightGray);
+    color: var(--clr-accent-700);
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.btn-accent-secondary:hover {
+    background-color: var(--clr-accent-100);
+}
+
+/* header start */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: var(--clr-primary-700);
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+.nav-link:hover {
+    color: var(--clr-primary-100);
+}
+
+/* header end */
+
+
+/* main start */
+
+main {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-intro,
+.main-desc,
+.main-testimonials {
+    margin-bottom: 6rem;
+}
+
+
+.main-intro-wrapper,
+.main-desc-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+}
+
+.main-intro-content {
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    line-height: 1.5;
+}
+
+.main-intro-content .title {
+    color: var(--clr-primary-400);
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+.main-intro-content .text {
+    color: var(--clr-primary-100);
+    margin-right: 8rem;
+}
+
+.main-desc-left {
+    padding-right: 3rem;
+}
+
+.main-desc-left .title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.main-desc-left .text {
+    line-height: 1.5;
+    padding-right: 7rem;
+}
+
+.main-desc-right .description {
+    display: flex;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.main-desc-right .description .number {
+    background-color: var(--clr-accent-700);
+    color: var(--VeryLightGray);
+    align-self: flex-start;
+    padding: 10px 25px;
+    margin-right: 1.5rem;
+    border-radius: 30px;
+}
+
+.main-desc-right .description .content .title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.bg1 {
+    position: absolute;
+    z-index: -1;
+    right: -90px;
+    top: -250px;
+}
+
+.bg2 {
+    position: absolute;
+    z-index: -1;
+    left: -25%;
+    top: 60rem;
+}
+
+
+.main-testimonial-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+/* main end */
+
+
+/* footer start */
+
+.footer-banner {
+    background-color: var(--clr-accent-700);
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.footer-banner-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.footer-banner-text {
+    max-width: 500px;
+    font-size: 2.3rem;
+    color: var(--VeryLightGray);
+    font-weight: 700;
+}
+
+.footer-bg{
+    position: absolute;
+    top: 0;
+}
+
+.footer-links-container{
+    background-color: var(--clr-primary-700);
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4. 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer-links .logo img{
+    
+}
+
+/* footer end */
