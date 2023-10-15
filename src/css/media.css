@@ -1,0 +1,58 @@
+@media  screen and (max-width: 1000px) {
+    nav{
+        position: absolute;
+        backdrop-filter: blur(10px);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        transform: translateX(100%);
+        opacity: 0%;
+        transition: opacity 3000ms, transform 3000ms;
+    }
+
+    nav[area-open="true"]{
+        opacity: 100%;
+        transform: translateX(0);
+        position: fixed;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-getStarted{
+        display: none;
+    }
+
+    .mobile-nav-toggle{
+        margin: 0 2rem;
+        display: block;
+        z-index: 9999;
+        position: relative;
+    }
+
+    .mobile-nav-toggle div{
+        width: 1.75rem;
+        height: 3px;
+        background-color: hsl(0, 0%, 19%);
+        margin: 5px;
+        transition: 0.5s all;
+    }
+
+    /* .mobile-nav-toggle[area-expanded="true"]{
+        
+    } */
+
+    .mobile-nav-toggle[area-expanded="true"] .line1{
+        transform: translate(0,0.5rem) rotate(45deg);
+    }
+    .mobile-nav-toggle[area-expanded="true"] .line2{
+        transform: rotatez(180deg);
+        opacity: 0;
+    }
+    .mobile-nav-toggle[area-expanded="true"] .line3{
+        transform: translate(0,-0.5rem) rotate(-45deg);
+    }
+}

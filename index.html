@@ -14,6 +14,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/media.css" />
     <title>My Project</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
         <div class="header-logo">
           <img src="./src/icons/logo.svg" alt="manage" />
         </div>
-        <nav>
+        <nav area-open="false" class="nav">
           <div class="nav-links-wrapper">
             <ul class="nav-list">
               <li class="nav-link">Pricing</li>
@@ -35,6 +36,11 @@
         </nav>
         <div class="nav-buttons">
           <button class="nav-getStarted btn-accent">Get Started</button>
+          <div area-expanded="false" class="mobile-nav-toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -127,12 +133,8 @@
         </div>
       </div>
 
-      <div class="bg1">
-        <img src="./src/img/bg-tablet-pattern.svg" alt="" />
-      </div>
-      <div class="bg2">
-        <img src="./src/img/bg-tablet-pattern.svg" alt="" />
-      </div>
+      <div class="bg1"></div>
+      <div class="bg2"></div>
     </main>
     <footer>
       <div class="footer-banner">
@@ -143,25 +145,25 @@
           <button class="btn-accent-secondary">Get Started</button>
         </div>
         <div class="footer-bg">
-            <img src="./src/img/bg-simplify-section-desktop.svg" alt="">
+          <img src="./src/img/bg-simplify-section-desktop.svg" alt="" />
         </div>
       </div>
       <div class="footer-links-container">
         <div class="footer-links">
-            <div class="logo">
-                <img src="./src/icons/logo.svg" alt="manage" />
-            </div>
-            <div class="socials">
-                <img src="./src/icons/icon-facebook.svg" alt="">
-                <img src="./src/icons/icon-instagram.svg" alt="">
-                <img src="./src/icons/icon-pinterest.svg" alt="">
-                <img src="./src/icons/icon-twitter.svg" alt="">
-                <img src="./src/icons/icon-youtube.svg" alt="">
-            </div>
-            <div class="link1"></div>
-            <div class="link2"></div>
-            <div class="search"></div>
-            <div class="cr"></div>
+          <div class="logo">
+            <img src="./src/icons/logo.svg" alt="manage" />
+          </div>
+          <div class="socials">
+            <img src="./src/icons/icon-facebook.svg" alt="" />
+            <img src="./src/icons/icon-instagram.svg" alt="" />
+            <img src="./src/icons/icon-pinterest.svg" alt="" />
+            <img src="./src/icons/icon-twitter.svg" alt="" />
+            <img src="./src/icons/icon-youtube.svg" alt="" />
+          </div>
+          <div class="link1"></div>
+          <div class="link2"></div>
+          <div class="search"></div>
+          <div class="cr"></div>
         </div>
       </div>
     </footer>

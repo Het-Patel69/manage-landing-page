@@ -25,6 +25,7 @@
 }
 
 body {
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -107,6 +108,14 @@ nav {
 .nav-link:hover {
     color: var(--clr-primary-100);
 }
+
+/*  */
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+/*  */
 
 /* header end */
 
@@ -193,8 +202,10 @@ main {
 .bg1 {
     position: absolute;
     z-index: -1;
-    right: -90px;
+    background: url('../img/bg-tablet-pattern.svg');
+    left: 52%;
     top: -250px;
+    overflow: hidden;
 }
 
 .bg2 {
@@ -202,6 +213,7 @@ main {
     z-index: -1;
     left: -25%;
     top: 60rem;
+    overflow: hidden;
 }
 
 
@@ -256,8 +268,8 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
-.footer-links .logo img{
+/* .footer-links .logo img{
     
-}
+} */
 
 /* footer end */
